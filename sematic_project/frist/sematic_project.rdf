@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ex="http://example.org/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <rdfs:Class rdf:about="Module" />
+    <rdfs:Class rdf:about="étudient" />
+    <rdfs:Class rdf:about="Enseignent" />
+    <rdfs:Class rdf:about="Groupe" />
+
+    <rdfs:Property rdf:ID="intervient">
+        <rdfs:domain rdf:resource="#Enseignent" />
+        <rdfs:range rdf:resource="#Module" />
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="suivent">
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="#Enseignent" />
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="appartient ">
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="#Groupe" />
+    </rdfs:Property>
+
+
+    <rdf:Description rdf:about="#date_de_naissance">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="#adresse">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="#numéro">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="#inscription">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="#nom">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="#prénom">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="#unique">
+        <rdf:type rdf:resource="rdf:Property" />
+        <rdfs:domain rdf:resource="#étudient" />
+        <rdfs:range rdf:resource="xsd:string" />
+    </rdf:Description>
+</rdf:RDF>

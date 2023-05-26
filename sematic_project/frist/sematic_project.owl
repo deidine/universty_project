@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/project/"
+    xml:base="http://www.semanticweb.org/project/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/project">
+        <rdfs:comment>cette class pour institut</rdfs:comment>
+    </owl:Ontology>
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/project#appartient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:range rdf:resource="http://www.semanticweb.org/project#Groupe" />
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/project#intervient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Enseignent" />
+        <rdfs:range rdf:resource="http://www.semanticweb.org/project#Modules" />
+    </owl:ObjectProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#adresse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Enseignent" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Enseignent" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Groupe" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#date_de_naissance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#dure_en_heures">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Modules" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#inscription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#intitule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Modules" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Enseignent" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#numéro">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Enseignent" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Modules" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#prénom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Enseignent" />
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Etudient" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#spécialité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Groupe" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Modules" />
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/project#nombre_d’étudient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/project#Groupe" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer" />
+    </owl:DatatypeProperty>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/project#Enseignent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/project#institut" />
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/project#Etudient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/project#institut" />
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/project#Groupe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/project#institut" />
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/project#Modules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/project#institut" />
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/project#institut" />
+</rdf:RDF>
+
+ 
