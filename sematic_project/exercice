@@ -1,0 +1,18 @@
+On veut réaliser l’informatisation d’un institut de formation. Les cours sont organisés en modules, chaque module est caractérisé par un numéro de module, un intitulé, une durée en heures et un type. Les étudiants suivent des enseignements portant sur plusieurs modules. Chaque étudiant est caractérisé par un numéro d’inscription unique, un nom, un prénom, une adresse et une date de naissance, un étudiant est évalué pour chaque module et possède une note de module.
+ 2 Chaque étudiant appartient à un groupe caractérisé par un code, une spécialité et le nombre d’étudiants qu’il comporte. Un enseignant intervient dans un module pour un groupe donné à une date donnée, chaque enseignant est caractérisé par un code, un nom, un prénom et une adresse. 
+a. Donnez l'ensemble terminologique (T-box) et les instances (A-box) de l’ontologie en utilisant la notation des logiques de descriptions.
+ b. On vous demande de modéliser les informations contenues dans le texte dans un graphe RDF et une ontologie OWL (format RDF ou OWL). Ajouter des instances à l'ontologie. 
+c. Le travail est à rendre en version numérique.
+Réponse
+Modules => numéro, intitule, dure en heures, type 
+Etudient => nom, numéro, inscription unique, prénom, adresse, date de naissance 
+Un étudiant est évalué pour chaque module et possède une note de module.
+Enseignent => un code, un nom, un prénom et une adresse
+Groupe => code, spécialité, nombre d’étudient 
+Etudient appartient à un groupe
+Étudient suivent de enseignements
+Un enseignant intervient dans un module
+Sujet =>
+Prédicat => intervient, suivent, appartient 
+Object=> étudient, enseignent, groupe,modules 
+ 
