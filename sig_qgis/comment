@@ -1,0 +1,17 @@
+#create app show loco information with postgersql
+#install plugin qgis2leaf or qgis2web
+#install plugin mapflow for automatic map design
+#export map o html file 
+#create acount in qgiscloud
+#being arial affiche les maison sous forme normal 
+#install extension postgis in  postgresql go to runbuilder after that create connection in qgis
+to the database then drag and drop the layer shape file to the database in browser that will
+create the table for each layer in postgresql data base 
+
+
+#pour show places in map 
+Go to Layers > Data Source Management.
+Go to the tab XYZ Connections.
+Add a New XYZ Connection.
+Enter the following URL for Bing Maps Aerial imagery: http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1.
+Give it a name and click OK.
